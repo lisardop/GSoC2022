@@ -1,7 +1,7 @@
 
 # Google Summer of Code 2022 "Aztec Glyphs" Report
 
-Improving the Visual Recognition of Aztec Hieroglyphs (Decipherment Tool)
+Improving the Visual Recognition of Aztec Hieroglyphs (Decipherment Tool) @ Red Hen Lab - GSoC 2022
 
 # License
 
