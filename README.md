@@ -1,6 +1,7 @@
 
 # Google Summer of Code 2022 "Aztec Glyphs" Report
 
+Improving the Visual Recognition of Aztec Hieroglyphs (Decipherment Tool)
 
 # License
 
