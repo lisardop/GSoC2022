@@ -9,6 +9,8 @@ Improving the Visual Recognition of Aztec Hieroglyphs (Decipherment Tool) @ Red 
 
 - Listed via Internet Archive - Wayback Machine [snapshot](https://web.archive.org/web/20220901011251/https://aztecglyphrecognition.herokuapp.com/)
 
+- Dataset was expanded with new additions from 'Matricula de Tributos' Codex. A copy of them is available [here](https://www.dropbox.com/sh/q0ld6ir0r2n2pn7/AAAjLrmcFfLra2mOe4tE7EZRa?dl=0)
+
 # License
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
