@@ -3,9 +3,9 @@
 
 Improving the Visual Recognition of Aztec Hieroglyphs (Decipherment Tool) @ Red Hen Lab - GSoC 2022
 
-A functional URL is provider [here](https://aztecglyphrecognition.herokuapp.com)
+A functional URL is provided under Heroku hosting [here](https://aztecglyphrecognition.herokuapp.com)
 
-[Internet Archive - Wayback Machine snapshot](https://web.archive.org/web/20220901011251/https://aztecglyphrecognition.herokuapp.com/)
+Checked via Internet Archive - Wayback Machine [snapshot](https://web.archive.org/web/20220901011251/https://aztecglyphrecognition.herokuapp.com/)
 
 # License
 
