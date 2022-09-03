@@ -92,7 +92,7 @@ def extract_features():
 
 	print('finished extracting features for %d images' % len(images))
 
-#get similarity results of closets images and split filenames for link them to Visual Lexicon website
+#get similarity results of closed images and split filenames for link them to Visual Lexicon website
 def analyze_image(imagePath, originalFileName, clientId, imageId):
 	print("analyzing image: %s" % (imagePath))
 	img, x = load_image(imagePath)
