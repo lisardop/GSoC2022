@@ -55,7 +55,7 @@ pip install tensorflow flask flask-executor Werkzeug flask-socketio keras pillow
 
 >
 
-- Run de script
+- Run the script
 
 ~~~
 export FLASK_APP=app
