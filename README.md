@@ -7,7 +7,7 @@ Improving the Visual Recognition of Aztec Hieroglyphs (Decipherment Tool) @ Red 
 
 - A functional URL is provided under Heroku hosting [here](https://aztecglyphrecognition.herokuapp.com)
 
-- Listed via Internet Archive - Wayback Machine [snapshot](https://web.archive.org/web/20220901011251/https://aztecglyphrecognition.herokuapp.com/)
+- Listed via Internet Archive - Wayback Machine [snapshot](https://web.archive.org/web/20220903185244/https://aztecglyphrecognition.herokuapp.com/)
 
 - Dataset was expanded with new additions from 'Matricula de Tributos' Codex. A copy of them is available [here](https://www.dropbox.com/sh/q0ld6ir0r2n2pn7/AAAjLrmcFfLra2mOe4tE7EZRa?dl=0)
 
