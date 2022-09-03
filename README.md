@@ -19,13 +19,13 @@ As a continuity of previous GSoC2021 project, there is a list of new implementat
 
 - The app shows now the first 6 closed images related with user's uploaded image instead of just 5
 
-- Results are printe in screen under 100 px intead 120 for fit with phone devices and some browsers
+- Results are printed in screen under 100 px instead 120 for fit with phone devices and some browsers
 
 - Fixed: first most closed result is now readed from array(0) position, instead 1.
 
 - Glyph info is obtained from first part of the filename split
 
-- Each closed image is now also linked on-clicl to Visual Recognition of Aztec Hieroglyphs site's results
+- Each closed image is now also linked on-click to Visual Recognition of Aztec Hieroglyphs site's results
 
 - Cosine distance is converted in percentil amount of similarity between user's image and closed image
 
