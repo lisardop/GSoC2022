@@ -11,6 +11,64 @@ Improving the Visual Recognition of Aztec Hieroglyphs (Decipherment Tool) @ Red 
 
 - Dataset was expanded with new additions from 'Matricula de Tributos' Codex. A copy of them is available [here](https://www.dropbox.com/sh/q0ld6ir0r2n2pn7/AAAjLrmcFfLra2mOe4tE7EZRa?dl=0)
 
+# CHANGELOG
+
+As a continuity of previous GSoC2021 project, there is a list of new implementations and changes:
+
+- Default upload folder changed from app local 'static/uploads/' to '/tmp/aztecglyphrecongitiontempuploads/' (script creates this tmp subfolder if not exists)
+
+- The app shows now the first 6 closed images related with user's uploaded image instead of just 5
+
+- Results are printe in screen under 100 px intead 120 for fit with phone devices and some browsers
+
+- Fixed: first most closed result is now readed from array(0) position, instead 1.
+
+- Glyph info is obtained from first part of the filename split
+
+- Each closed image is now also linked on-clicl to Visual Recognition of Aztec Hieroglyphs site's results
+
+- Cosine distance is converted in percentil amount of similarity between user's image and closed image
+
+- A proper match is >85% of similarity (very few times in lower ranks 80-75%)
+
+- Glyph name and percentage are shown at image mouse-over
+
+- Cropping glyphs with surrounded color material can give abnomal results due to full-color image comparison
+
+# IMPLEMENTATION (localhost via 5000 port)
+
+ Create a local virtual env (python3 and pip needed)
+ 
+~~~
+python3 -m ensurepip
+python3 -m venv aztecglyphvenv
+source ./aztecglyphvenv/bin/activate
+~~~
+
+>
+
+- Install requirements (requirements.txt)
+
+~~~
+pip install tensorflow flask flask-executor Werkzeug flask-socketio keras pillow scipy
+~~~
+
+>
+
+- Run de script
+
+~~~
+export FLASK_APP=app
+python3 -m flask run
+~~~
+
+>
+
+- Check the app typing in your browser: http://localhost:5000
+
+Enjoy!!
+
+
 # License
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
