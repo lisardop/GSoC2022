@@ -61,7 +61,7 @@ pip3.9 install flask flask-executor Werkzeug flask-socketio keras pillow python-
 
 ~~~
 export FLASK_APP=app
-python3 -m flask run
+python3.9 -m flask run
 ~~~
 
 >
