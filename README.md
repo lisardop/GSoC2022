@@ -5,7 +5,7 @@ Improving the Visual Recognition of Aztec Hieroglyphs (Decipherment Tool) @ Red 
 
 - Here is my blog project for [GSoC 2022 ](https://lisardop.github.io/)
 
-- Code was deployed and running in University of Oregon server as [AztecGlyphRecognition URL](https://aztecglyphrecognition.wired-humanitines.org)
+- Code was deployed and running in University of Oregon server as [AztecGlyphRecognition URL](https://aztecglyphrecognition.wired-humanities.org/)
 
 - Another functional mirror URL is provided under Heroku hosting [here](https://aztecglyphrecognition.herokuapp.com)
 
