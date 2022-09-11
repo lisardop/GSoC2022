@@ -39,11 +39,11 @@ As a continuity of previous GSoC2021 project, there is a list of new implementat
 
 # IMPLEMENTATION (localhost via 5000 port)
 
- Create a local virtual env (python3 and pip needed)
+ Create a local virtual env (python3.9 and pip needed)
  
 ~~~
-python3 -m ensurepip
-python3 -m venv aztecglyphvenv
+python3.9 -m ensurepip
+python3.9 -m venv aztecglyphvenv
 source ./aztecglyphvenv/bin/activate
 ~~~
 
@@ -52,7 +52,7 @@ source ./aztecglyphvenv/bin/activate
 - Install requirements (requirements.txt)
 
 ~~~
-pip install tensorflow flask flask-executor Werkzeug flask-socketio keras pillow scipy
+pip3.9 install flask flask-executor Werkzeug flask-socketio keras pillow python-socketio gunicorn==20.1.0 gevent-websocket eventlet==0.30.2 scipy tensorflow
 ~~~
 
 >
