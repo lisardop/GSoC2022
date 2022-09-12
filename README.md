@@ -56,7 +56,7 @@ Enjoy!!
 
 - We use gunicorn + eventlet from our virtual enviroment 'aztecglyphvenv'. Script runs on 0.0.0.0:5000 and gunicorn on 0.0.0.0:8000 by default, Nginx acts as reverse proxy 443 (outside) 8000 (inside). Files needed to configure:
 
-# /etc/nginx/proy_params
+## /etc/nginx/proy_params
 
 ~~~
 proxy_set_header Host $http_host;
@@ -67,7 +67,7 @@ proxy_set_header X-Forwarded-Proto $scheme;
 
 >
 
-# /etc/nginx/sites-available/yourwebsite.conf
+## /etc/nginx/sites-available/yourwebsite.conf
 
 ~~~
 server {
