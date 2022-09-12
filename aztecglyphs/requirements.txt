@@ -5,3 +5,8 @@ flask-socketio
 keras==2.4
 pillow
 tensorflow==2.5
+python-socketio
+gunicorn==20.1.0
+gevent-websocket
+eventlet==0.30.2
+scipy
