@@ -95,7 +95,7 @@ server {
 }
 ~~~
 
-# /etc/supervisord.conf (at end-of-file)
+## /etc/supervisord.conf (at end-of-file)
 
 ~~~
 [program:aztecglyphrecognition]
@@ -135,7 +135,7 @@ As a continuity of previous [GSoC2021 project](https://summerofcode.withgoogle.c
 
 - Default upload folder changed from app local 'static/uploads/' to '/tmp/aztecglyphrecongitiontempuploads/' (script creates this tmp subfolder if not exists)
 
-# app.py
+## app.py
 ~~~
 #UPLOAD_FOLDER = 'static/uploads/'
 UPLOAD_FOLDER = '/tmp/aztecglyphrecognitiontempuploads/'
@@ -159,7 +159,7 @@ def upload_image():
 
 - The app gets and shows now the first 6 closed images related with user's upload instead of just 5
 
-# app.py
+## app.py
 ~~~
 def get_closest_images(imga, num_results=6):
         distances = [ distance.cosine(imga, feat) for feat in features ]
@@ -172,7 +172,7 @@ def get_closest_images(imga, num_results=6):
 
 - Results are printed in screen under 100 px instead 120 for fit with phone devices and some browsers
 
-# /templates/app.html
+## /templates/app.html
 ~~~
 img.attr('src', payload['results'][i])
 img.attr('width', '100')
@@ -184,7 +184,7 @@ img.attr('style', 'border: 1px solid #ddd')
 
 - Fixed: first most closed result is now readed from array(0) position, instead 1.
 
-# app.py
+## app.py
 ~~~
 idx_closest = sorted(range(len(distances)), key=lambda k: distances[k])[0:num_results]
 ~~~
@@ -193,7 +193,7 @@ idx_closest = sorted(range(len(distances)), key=lambda k: distances[k])[0:num_re
 
 - Glyph info is obtained from first part of the filename split
 
-# app.py 
+## app.py 
 ~~~
 	for idx in results:
 		head, tail = os.path.split(images_website[idx])
@@ -204,7 +204,7 @@ idx_closest = sorted(range(len(distances)), key=lambda k: distances[k])[0:num_re
 
 - Each closed image is now also linked on-click to Visual Recognition of Aztec Hieroglyphs site's results
 
-# /templates/app.html
+## /templates/app.html
 ~~~
 img.attr('href', 'https://aztecglyphs.uoregon.edu/fulltext-quick-search?search_api_views_fulltext='+payload['glyphname'][i])
 ~~~
@@ -213,14 +213,14 @@ img.attr('href', 'https://aztecglyphs.uoregon.edu/fulltext-quick-search?search_a
 
 - Cosine distance is converted in percentil amount of similarity between user's image and closed image
 
-# app.py
+## app.py
 ~~~
 similarity = sorted((int(round((1-(distance.cosine(imga, feat)))*100, 0)) for feat in features), key=int, reverse=True)[0:num_results]
 ~~~
 
 >
 
-# /templates/app.html
+## /templates/app.html
 ~~~
 Math.abs(payload['similarity'][i])
 ~~~
@@ -233,7 +233,7 @@ Math.abs(payload['similarity'][i])
 
 - Glyph name and percentage are shown at image mouse-over
 
-# /templates/app.html
+## /templates/app.html
 ~~~
 .attr('title', payload['glyphname'][i]+' ('+ Math.abs(payload['similarity'][i])+'% of similarity)'))
 ~~~
