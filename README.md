@@ -120,7 +120,7 @@ sudo supervisorctl start aztecglyphrecognition
 
 >
 
-- If you don't want to use "supervisor", just active your virtualenv and run:
+- If you don't want to use "supervisor", just activate your virtualenv and run:
 
 ~~~
 gunicorn --reload -k eventlet -b 0.0.0.0:8000 -w 1 --threads 2 wsgi:app --timeout 1200
